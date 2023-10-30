@@ -1,0 +1,79 @@
+{
+    "id": "/subscriptions/37f26f9f-6c7c-4be6-9442-56e71b2d14e2/resourcegroups/rg-emoney-Hub-01/providers/Microsoft.RedHatOpenShift/openShiftClusters/arotest",
+    "name": "arotest",
+    "type": "Microsoft.RedHatOpenShift/openShiftClusters",
+    "location": "eastus",
+    "systemData": {
+        "createdBy": "sunil.kumarsharma@rackspace.com",
+        "createdByType": "User",
+        "createdAt": "2023-10-13T10:44:28.8522246Z",
+        "lastModifiedBy": "sunil.kumarsharma@rackspace.com",
+        "lastModifiedByType": "User",
+        "lastModifiedAt": "2023-10-13T10:44:28.8522246Z"
+    },
+    "tags": {
+        "BuildBy": "Sunil Sharma"
+    },
+    "properties": {
+        "provisioningState": "Succeeded",
+        "clusterProfile": {
+            "domain": "emoneyaro",
+            "version": "4.12.25",
+            "resourceGroupId": "/subscriptions/37f26f9f-6c7c-4be6-9442-56e71b2d14e2/resourcegroups/aro-infra-lnohdjwg-arotest",
+            "fipsValidatedModules": "Disabled"
+        },
+        "consoleProfile": {
+            "url": "https://console-openshift-console.apps.emoneyaro.eastus.aroapp.io/"
+        },
+        "servicePrincipalProfile": {
+            "clientId": "1edabb7a-e558-4be1-a7ef-b4c2bdc77ae3"
+        },
+        "networkProfile": {
+            "podCidr": "10.128.0.0/14",
+            "serviceCidr": "172.30.0.0/16"
+        },
+        "masterProfile": {
+            "vmSize": "Standard_D8s_v3",
+            "subnetId": "/subscriptions/37f26f9f-6c7c-4be6-9442-56e71b2d14e2/resourceGroups/rg-emoney-Hub-01/providers/Microsoft.Network/virtualNetworks/aro-vnet-lnog7o24/subnets/master-subnet",
+            "encryptionAtHost": "Disabled"
+        },
+        "workerProfiles": [
+            {
+                "name": "arotest-4h6f9-worker-eastus1",
+                "vmSize": "Standard_D8s_v3",
+                "diskSizeGB": 128,
+                "subnetId": "/subscriptions/37f26f9f-6c7c-4be6-9442-56e71b2d14e2/resourceGroups/rg-emoney-Hub-01/providers/Microsoft.Network/virtualNetworks/aro-vnet-lnog7o24/subnets/worker-subnet",
+                "count": 1,
+                "encryptionAtHost": "Disabled"
+            },
+            {
+                "name": "arotest-4h6f9-worker-eastus2",
+                "vmSize": "Standard_D8s_v3",
+                "diskSizeGB": 128,
+                "subnetId": "/subscriptions/37f26f9f-6c7c-4be6-9442-56e71b2d14e2/resourceGroups/rg-emoney-Hub-01/providers/Microsoft.Network/virtualNetworks/aro-vnet-lnog7o24/subnets/worker-subnet",
+                "count": 1,
+                "encryptionAtHost": "Disabled"
+            },
+            {
+                "name": "arotest-4h6f9-worker-eastus3",
+                "vmSize": "Standard_D8s_v3",
+                "diskSizeGB": 128,
+                "subnetId": "/subscriptions/37f26f9f-6c7c-4be6-9442-56e71b2d14e2/resourceGroups/rg-emoney-Hub-01/providers/Microsoft.Network/virtualNetworks/aro-vnet-lnog7o24/subnets/worker-subnet",
+                "count": 1,
+                "encryptionAtHost": "Disabled"
+            }
+        ],
+        "apiserverProfile": {
+            "visibility": "Public",
+            "url": "https://api.emoneyaro.eastus.aroapp.io:6443/",
+            "ip": "40.76.67.3"
+        },
+        "ingressProfiles": [
+            {
+                "name": "default",
+                "visibility": "Public",
+                "ip": "104.211.28.162"
+            }
+        ]
+    }
+}
